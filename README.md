@@ -1,12 +1,12 @@
 # Text Mining: Analisis Sentimen Tweet Alicorn Twilight
 
-## 📋 Deskripsi Proyek
+##  Deskripsi Proyek
 
 Proyek ini merupakan implementasi lengkap pipeline text mining untuk menganalisis sentimen tweet tentang transformasi Twilight Sparkle menjadi Alicorn di akhir season 3 dari serial My Little Pony: Friendship is Magic. Dataset berisi sekitar 500 tweet yang dikumpulkan melalui crawling Twitter menggunakan tools oleh Helmi Satria.
 
 Proyek ini mencakup seluruh proses dari preprocessing data, ekstraksi fitur, analisis sentimen, hingga klasifikasi menggunakan algoritma K-Nearest Neighbors (KNN).
 
-## 🎯 Tujuan
+##  Tujuan
 
 - Melakukan preprocessing teks untuk membersihkan data tweet
 - Mengekstraksi fitur menggunakan teknik unigram
@@ -14,7 +14,7 @@ Proyek ini mencakup seluruh proses dari preprocessing data, ekstraksi fitur, ana
 - Mengklasifikasikan sentimen menggunakan algoritma KNN
 - Mengevaluasi performa model klasifikasi
 
-## 📂 Struktur Proyek
+##  Struktur Proyek
 
 ```
 alicorntwi-textmining/
@@ -30,9 +30,9 @@ alicorntwi-textmining/
 └── README.md                         # Dokumentasi proyek
 ```
 
-## 🔄 Pipeline Proyek
+##  Pipeline Proyek
 
-### 1️⃣ Preprocessing (Preprocessing.ipynb)
+###  Preprocessing (Preprocessing.ipynb)
 
 Tahap pembersihan dan normalisasi data tweet dengan langkah-langkah:
 
@@ -53,7 +53,7 @@ Tahap pembersihan dan normalisasi data tweet dengan langkah-langkah:
 - `re`: Regular expression untuk cleaning
 - `nltk`: Tokenization, stopword removal, lemmatization
 
-### 2️⃣ Feature Extraction (Feature Extraction.ipynb)
+###  Feature Extraction (Feature Extraction.ipynb)
 
 Ekstraksi fitur dari teks menggunakan teknik **Unigram** (bag-of-words dengan 1 kata).
 
@@ -69,7 +69,7 @@ Ekstraksi fitur dari teks menggunakan teknik **Unigram** (bag-of-words dengan 1 
 - `pandas`: Manipulasi data
 - `sklearn.feature_extraction.text.CountVectorizer`: Ekstraksi fitur unigram
 
-### 3️⃣ Sentiment Analysis (Sentiment Analysis.ipynb)
+###  Sentiment Analysis (Sentiment Analysis.ipynb)
 
 Analisis sentimen menggunakan pendekatan **Lexicon-based** dengan VADER (Valence Aware Dictionary and sEntiment Reasoner).
 
@@ -88,7 +88,7 @@ Analisis sentimen menggunakan pendekatan **Lexicon-based** dengan VADER (Valence
 - `pandas`: Manipulasi data
 - `vaderSentiment.vaderSentiment.SentimentIntensityAnalyzer`: Analisis sentimen
 
-### 4️⃣ KNN Classification (KNN Classification.ipynb)
+###  KNN Classification (KNN Classification.ipynb)
 
 Klasifikasi sentimen menggunakan algoritma **K-Nearest Neighbors** dengan supervised learning.
 
@@ -108,7 +108,7 @@ Klasifikasi sentimen menggunakan algoritma **K-Nearest Neighbors** dengan superv
 - `sklearn.neighbors.KNeighborsClassifier`: Model KNN
 - `sklearn.metrics`: Evaluasi model (classification_report, accuracy_score)
 
-## 🛠️ Teknologi & Libraries
+##  Teknologi & Libraries
 
 ### Core Libraries:
 - **Python 3.x**
@@ -124,7 +124,7 @@ Klasifikasi sentimen menggunakan algoritma **K-Nearest Neighbors** dengan superv
 - `punkt_tab`
 - `wordnet`
 
-## 📊 Dataset
+##  Dataset
 
 **Sumber:** Twitter (crawling menggunakan tools oleh Helmi Satria)  
 **Topik:** Transformasi Twilight Sparkle menjadi Alicorn (My Little Pony Season 3)  
@@ -148,7 +148,7 @@ Klasifikasi sentimen menggunakan algoritma **K-Nearest Neighbors** dengan superv
 - `user_id_str`: ID user
 - `username`: Username
 
-## 🚀 Cara Menggunakan
+##  Cara Menggunakan
 
 ### Prerequisites:
 ```bash
@@ -186,36 +186,36 @@ nltk.download('wordnet')
    Buka dan jalankan: KNN Classification.ipynb
    ```
 
-## 📈 Hasil & Evaluasi
+##  Hasil & Evaluasi
 
 Model KNN dievaluasi menggunakan:
 - **Classification Report**: Precision, Recall, F1-Score untuk setiap kelas
 - **Accuracy Score**: Akurasi keseluruhan model
 - **Confusion Matrix**: (dapat ditambahkan untuk visualisasi)
 
-## 🔍 Insights
+##  Insights
 
 Proyek ini mendemonstrasikan:
-- ✅ Pipeline lengkap text mining dari raw data hingga klasifikasi
-- ✅ Preprocessing teks yang komprehensif (8 langkah)
-- ✅ Kombinasi pendekatan lexicon-based dan machine learning
-- ✅ Implementasi praktis NLP untuk analisis media sosial
+-  Pipeline lengkap text mining dari raw data hingga klasifikasi
+-  Preprocessing teks yang komprehensif (8 langkah)
+-  Kombinasi pendekatan lexicon-based dan machine learning
+-  Implementasi praktis NLP untuk analisis media sosial
 
-## 👥 Kontributor
+##  Kontributor
 
 - **Dataset:** Helmi Satria (Twitter Crawling Tools)
 
-## 📝 Catatan
+##  Catatan
 
 - Proyek ini menggunakan Jupyter Notebook untuk kemudahan eksplorasi dan visualisasi
 - Setiap notebook dapat dijalankan secara independen setelah prerequisites terpenuhi
 - Dataset dapat diganti dengan dataset tweet lain dengan struktur serupa
 - Parameter model (seperti k pada KNN) dapat disesuaikan untuk optimasi
 
-## 📜 Lisensi
+##  Lisensi
 
 Proyek ini dibuat untuk keperluan akademis (Text Mining - Semester 5)
 
 ---
 
-**⚠️ Disclaimer:** Dataset tweet dikumpulkan untuk tujuan penelitian dan pendidikan. Harap menghormati kebijakan privasi dan terms of service Twitter.
+**Disclaimer:** Dataset tweet dikumpulkan untuk tujuan penelitian dan pendidikan. Harap menghormati kebijakan privasi dan terms of service Twitter.
